@@ -8,8 +8,8 @@
 </head>
 <body>
     <form action="" method="post">
-        {% csrf_token%}
-        {{form}}
+        {% csrf_token %}
+        {{form.as_p}}
         <input type="submit" name="" value="Submit">
     </form>
 </body>

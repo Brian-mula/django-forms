@@ -21,4 +21,4 @@ urlpatterns = [
     path('home/',include('home.urls'))
 ]
 handler404="wwforms.views.handler404"
-handler500="wwforms.views.handler500"
+handler501="wwforms.views.handler501"

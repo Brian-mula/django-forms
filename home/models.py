@@ -6,3 +6,6 @@ class Product(models.Model):
     price: models.ImageField()
     description: models.TextField()
     added_date: models.DateField(auto_now=True)
+
+    def __str__(self):
+        return self.title
