@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .forms import ProductForm
 
 
 # Create your views here.
 def homepage(request):
-    return HttpResponse("We are testing the forms")
+    form=ProductForm()
+    context={"form":form}
+    return render(request,"home.html",context=context)
